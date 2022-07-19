@@ -7,7 +7,7 @@ from .views import CommentViewSet, GroupViewSet, PostViewSet
 from rest_framework.authtoken import views
 
 
-router_version_1 = routers.DefaultRouter() 
+router_version_1 = routers.DefaultRouter()
 router_version_1.register('posts', PostViewSet, basename='posts')
 router_version_1.register(
     'posts/(?P<post_id>\\d+)/comments', CommentViewSet, basename='comments'
